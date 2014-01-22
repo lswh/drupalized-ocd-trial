@@ -1,7 +1,0 @@
-<?php
-/**
- * @file
- * Code for the respondercontenttype feature.
- */
-
-include_once 'respondercontenttype.features.inc';
