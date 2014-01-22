@@ -1,0 +1,7 @@
+<?php
+/**
+ * @file
+ * Code for the responderform feature.
+ */
+
+include_once 'responderform.features.inc';
