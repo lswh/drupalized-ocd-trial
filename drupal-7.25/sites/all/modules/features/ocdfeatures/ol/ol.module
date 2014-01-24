@@ -1,7 +1,0 @@
-<?php
-/**
- * @file
- * Code for the OL feature.
- */
-
-include_once 'ol.features.inc';
