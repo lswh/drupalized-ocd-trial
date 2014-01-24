@@ -39,44 +39,42 @@ function responderform_field_default_field_bases() {
     'type' => 'text',
   );
 
-  // Exported field_base: 'field_all_weather_flashlight'
-  $field_bases['field_all_weather_flashlight'] = array(
+  // Exported field_base: 'field_advanced_sar_equipment'
+  $field_bases['field_advanced_sar_equipment'] = array(
     'active' => 1,
     'cardinality' => 1,
     'deleted' => 0,
     'entity_types' => array(),
-    'field_name' => 'field_all_weather_flashlight',
+    'field_name' => 'field_advanced_sar_equipment',
     'foreign keys' => array(),
     'indexes' => array(),
     'locked' => 0,
-    'module' => 'number',
+    'module' => 'field_collection',
     'settings' => array(
-      'decimal_separator' => '.',
-      'precision' => 10,
-      'scale' => 2,
+      'hide_blank_items' => TRUE,
+      'path' => '',
     ),
     'translatable' => 0,
-    'type' => 'number_decimal',
+    'type' => 'field_collection',
   );
 
-  // Exported field_base: 'field_backboard'
-  $field_bases['field_backboard'] = array(
+  // Exported field_base: 'field_basic_sar_equipment'
+  $field_bases['field_basic_sar_equipment'] = array(
     'active' => 1,
     'cardinality' => 1,
     'deleted' => 0,
     'entity_types' => array(),
-    'field_name' => 'field_backboard',
+    'field_name' => 'field_basic_sar_equipment',
     'foreign keys' => array(),
     'indexes' => array(),
     'locked' => 0,
-    'module' => 'number',
+    'module' => 'field_collection',
     'settings' => array(
-      'decimal_separator' => '.',
-      'precision' => 10,
-      'scale' => 2,
+      'hide_blank_items' => TRUE,
+      'path' => '',
     ),
     'translatable' => 0,
-    'type' => 'number_decimal',
+    'type' => 'field_collection',
   );
 
   // Exported field_base: 'field_city_or_municipality'
@@ -1746,19 +1744,19 @@ function responderform_field_default_field_bases() {
     'type' => 'list_text',
   );
 
-  // Exported field_base: 'field_communications_and_navigat'
-  $field_bases['field_communications_and_navigat'] = array(
+  // Exported field_base: 'field_communication_and_navigati'
+  $field_bases['field_communication_and_navigati'] = array(
     'active' => 1,
     'cardinality' => 1,
     'deleted' => 0,
     'entity_types' => array(),
-    'field_name' => 'field_communications_and_navigat',
+    'field_name' => 'field_communication_and_navigati',
     'foreign keys' => array(),
     'indexes' => array(),
     'locked' => 0,
     'module' => 'field_collection',
     'settings' => array(
-      'hide_blank_items' => 1,
+      'hide_blank_items' => TRUE,
       'path' => '',
     ),
     'translatable' => 0,
@@ -1794,6 +1792,25 @@ function responderform_field_default_field_bases() {
     'type' => 'text',
   );
 
+  // Exported field_base: 'field_cooking_set'
+  $field_bases['field_cooking_set'] = array(
+    'active' => 1,
+    'cardinality' => 1,
+    'deleted' => 0,
+    'entity_types' => array(),
+    'field_name' => 'field_cooking_set',
+    'foreign keys' => array(),
+    'indexes' => array(),
+    'locked' => 0,
+    'module' => 'field_collection',
+    'settings' => array(
+      'hide_blank_items' => 1,
+      'path' => '',
+    ),
+    'translatable' => 0,
+    'type' => 'field_collection',
+  );
+
   // Exported field_base: 'field_email'
   $field_bases['field_email'] = array(
     'active' => 1,
@@ -1821,63 +1838,6 @@ function responderform_field_default_field_bases() {
     ),
     'translatable' => 0,
     'type' => 'text',
-  );
-
-  // Exported field_base: 'field_emergency_medical_service'
-  $field_bases['field_emergency_medical_service'] = array(
-    'active' => 1,
-    'cardinality' => 1,
-    'deleted' => 0,
-    'entity_types' => array(),
-    'field_name' => 'field_emergency_medical_service',
-    'foreign keys' => array(),
-    'indexes' => array(),
-    'locked' => 0,
-    'module' => 'field_collection',
-    'settings' => array(
-      'hide_blank_items' => 1,
-      'path' => '',
-    ),
-    'translatable' => 0,
-    'type' => 'field_collection',
-  );
-
-  // Exported field_base: 'field_evacuation_and_relief'
-  $field_bases['field_evacuation_and_relief'] = array(
-    'active' => 1,
-    'cardinality' => 1,
-    'deleted' => 0,
-    'entity_types' => array(),
-    'field_name' => 'field_evacuation_and_relief',
-    'foreign keys' => array(),
-    'indexes' => array(),
-    'locked' => 0,
-    'module' => 'field_collection',
-    'settings' => array(
-      'hide_blank_items' => 1,
-      'path' => '',
-    ),
-    'translatable' => 0,
-    'type' => 'field_collection',
-  );
-
-  // Exported field_base: 'field_general_equipment'
-  $field_bases['field_general_equipment'] = array(
-    'active' => 1,
-    'cardinality' => 1,
-    'deleted' => 0,
-    'entity_types' => array(),
-    'field_name' => 'field_general_equipment',
-    'foreign keys' => array(),
-    'indexes' => array(),
-    'locked' => 0,
-    'module' => 'field_collection',
-    'settings' => array(
-      'hide_blank_items' => 1,
-      'path' => '',
-    ),
-    'translatable' => 0,
-    'type' => 'field_collection',
   );
 
   // Exported field_base: 'field_manpower_number'
@@ -1927,6 +1887,63 @@ function responderform_field_default_field_bases() {
     ),
     'translatable' => 0,
     'type' => 'text',
+  );
+
+  // Exported field_base: 'field_other_equipment_and_tools'
+  $field_bases['field_other_equipment_and_tools'] = array(
+    'active' => 1,
+    'cardinality' => 1,
+    'deleted' => 0,
+    'entity_types' => array(),
+    'field_name' => 'field_other_equipment_and_tools',
+    'foreign keys' => array(),
+    'indexes' => array(),
+    'locked' => 0,
+    'module' => 'field_collection',
+    'settings' => array(
+      'hide_blank_items' => TRUE,
+      'path' => '',
+    ),
+    'translatable' => 0,
+    'type' => 'field_collection',
+  );
+
+  // Exported field_base: 'field_personal_protective_gear'
+  $field_bases['field_personal_protective_gear'] = array(
+    'active' => 1,
+    'cardinality' => -1,
+    'deleted' => 0,
+    'entity_types' => array(),
+    'field_name' => 'field_personal_protective_gear',
+    'foreign keys' => array(),
+    'indexes' => array(),
+    'locked' => 0,
+    'module' => 'field_collection',
+    'settings' => array(
+      'hide_blank_items' => 1,
+      'path' => '',
+    ),
+    'translatable' => 0,
+    'type' => 'field_collection',
+  );
+
+  // Exported field_base: 'field_power_electric_equipment_a'
+  $field_bases['field_power_electric_equipment_a'] = array(
+    'active' => 1,
+    'cardinality' => 1,
+    'deleted' => 0,
+    'entity_types' => array(),
+    'field_name' => 'field_power_electric_equipment_a',
+    'foreign keys' => array(),
+    'indexes' => array(),
+    'locked' => 0,
+    'module' => 'field_collection',
+    'settings' => array(
+      'hide_blank_items' => TRUE,
+      'path' => '',
+    ),
+    'translatable' => 0,
+    'type' => 'field_collection',
   );
 
   // Exported field_base: 'field_province'
@@ -2075,6 +2092,25 @@ function responderform_field_default_field_bases() {
     'type' => 'list_text',
   );
 
+  // Exported field_base: 'field_rescue_tools_and_gadgets'
+  $field_bases['field_rescue_tools_and_gadgets'] = array(
+    'active' => 1,
+    'cardinality' => 1,
+    'deleted' => 0,
+    'entity_types' => array(),
+    'field_name' => 'field_rescue_tools_and_gadgets',
+    'foreign keys' => array(),
+    'indexes' => array(),
+    'locked' => 0,
+    'module' => 'field_collection',
+    'settings' => array(
+      'hide_blank_items' => TRUE,
+      'path' => '',
+    ),
+    'translatable' => 0,
+    'type' => 'field_collection',
+  );
+
   // Exported field_base: 'field_responder_name'
   $field_bases['field_responder_name'] = array(
     'active' => 1,
@@ -2104,13 +2140,13 @@ function responderform_field_default_field_bases() {
     'type' => 'text',
   );
 
-  // Exported field_base: 'field_search_and_rescue'
-  $field_bases['field_search_and_rescue'] = array(
+  // Exported field_base: 'field_sleeping_gear'
+  $field_bases['field_sleeping_gear'] = array(
     'active' => 1,
     'cardinality' => 1,
     'deleted' => 0,
     'entity_types' => array(),
-    'field_name' => 'field_search_and_rescue',
+    'field_name' => 'field_sleeping_gear',
     'foreign keys' => array(),
     'indexes' => array(),
     'locked' => 0,
@@ -2121,6 +2157,33 @@ function responderform_field_default_field_bases() {
     ),
     'translatable' => 0,
     'type' => 'field_collection',
+  );
+
+  // Exported field_base: 'field_specialization_of_responde'
+  $field_bases['field_specialization_of_responde'] = array(
+    'active' => 1,
+    'cardinality' => 1,
+    'deleted' => 0,
+    'entity_types' => array(),
+    'field_name' => 'field_specialization_of_responde',
+    'foreign keys' => array(),
+    'indexes' => array(
+      'value' => array(
+        0 => 'value',
+      ),
+    ),
+    'locked' => 0,
+    'module' => 'list',
+    'settings' => array(
+      'allowed_values' => array(
+        'Search and Rescue' => 'Search and Rescue',
+        'Evacuation and Relief' => 'Evacuation and Relief',
+        'Emergency Medical Service' => 'Emergency Medical Service',
+      ),
+      'allowed_values_function' => '',
+    ),
+    'translatable' => 0,
+    'type' => 'list_text',
   );
 
   // Exported field_base: 'field_training_capability'
@@ -2166,6 +2229,44 @@ function responderform_field_default_field_bases() {
     'type' => 'list_text',
   );
 
+  // Exported field_base: 'field_water_sanitation_and_hygie'
+  $field_bases['field_water_sanitation_and_hygie'] = array(
+    'active' => 1,
+    'cardinality' => 1,
+    'deleted' => 0,
+    'entity_types' => array(),
+    'field_name' => 'field_water_sanitation_and_hygie',
+    'foreign keys' => array(),
+    'indexes' => array(),
+    'locked' => 0,
+    'module' => 'field_collection',
+    'settings' => array(
+      'hide_blank_items' => TRUE,
+      'path' => '',
+    ),
+    'translatable' => 0,
+    'type' => 'field_collection',
+  );
+
+  // Exported field_base: 'field_water_search_and_rescue_eq'
+  $field_bases['field_water_search_and_rescue_eq'] = array(
+    'active' => 1,
+    'cardinality' => 1,
+    'deleted' => 0,
+    'entity_types' => array(),
+    'field_name' => 'field_water_search_and_rescue_eq',
+    'foreign keys' => array(),
+    'indexes' => array(),
+    'locked' => 0,
+    'module' => 'field_collection',
+    'settings' => array(
+      'hide_blank_items' => TRUE,
+      'path' => '',
+    ),
+    'translatable' => 0,
+    'type' => 'field_collection',
+  );
+
   // Exported field_base: 'field_website'
   $field_bases['field_website'] = array(
     'active' => 1,
@@ -2193,6 +2294,29 @@ function responderform_field_default_field_bases() {
     ),
     'translatable' => 0,
     'type' => 'text',
+  );
+
+  // Exported field_base: 'field_your_current_location'
+  $field_bases['field_your_current_location'] = array(
+    'active' => 1,
+    'cardinality' => 1,
+    'deleted' => 0,
+    'entity_types' => array(),
+    'field_name' => 'field_your_current_location',
+    'foreign keys' => array(),
+    'indexes' => array(
+      'lat' => array(
+        0 => 'lat',
+      ),
+      'lng' => array(
+        0 => 'lng',
+      ),
+    ),
+    'locked' => 0,
+    'module' => 'geolocation',
+    'settings' => array(),
+    'translatable' => 0,
+    'type' => 'geolocation_latlng',
   );
 
   return $field_bases;

@@ -706,6 +706,7 @@ function ol_user_default_permissions() {
     'name' => 'view own user location',
     'roles' => array(
       'administrator' => 'administrator',
+      'authenticated user' => 'authenticated user',
     ),
     'module' => 'location_user',
   );
