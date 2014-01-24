@@ -75,7 +75,7 @@ class ParserCSV {
   private $lastLinePos;
 
   public function __construct() {
-    $this->delimiter = ';';
+    $this->delimiter = '|';
     $this->skipFirstLine = FALSE;
     $this->columnNames = FALSE;
     $this->timeout = FALSE;
