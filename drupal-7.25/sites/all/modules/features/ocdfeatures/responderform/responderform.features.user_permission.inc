@@ -22,7 +22,9 @@ function responderform_user_default_permissions() {
   // Exported permission: 'create responder content'.
   $permissions['create responder content'] = array(
     'name' => 'create responder content',
-    'roles' => array(),
+    'roles' => array(
+      'authenticated user' => 'authenticated user',
+    ),
     'module' => 'node',
   );
 
@@ -50,7 +52,9 @@ function responderform_user_default_permissions() {
   // Exported permission: 'edit own responder content'.
   $permissions['edit own responder content'] = array(
     'name' => 'edit own responder content',
-    'roles' => array(),
+    'roles' => array(
+      'authenticated user' => 'authenticated user',
+    ),
     'module' => 'node',
   );
 
